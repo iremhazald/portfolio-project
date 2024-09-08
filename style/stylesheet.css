@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-h1 {
-  font-family: "Bebas Neue", sans-serif;
+:root {
+  --background-color: #f2f2f2;
+  --heading-font-family: "Bebas Neue", sans-serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
   font-weight: 400;
   font-style: normal;
+  background-color: var(--background-color);
 }
 
 .mainarea {
