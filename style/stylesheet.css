@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
