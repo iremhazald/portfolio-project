@@ -16,6 +16,7 @@ body {
 .illustrate {
   width: 30% !important;
   height: 40% !important;
+  border: none !important;
 }
 
 h1 {
@@ -50,7 +51,7 @@ h5 {
   line-height: 20px;
   padding: 8px 65px;
   border: 3px solid black;
-  margin-left: 15%;
+  margin-left: 17% !important;
 }
 
 .btn-branding:hover {
@@ -75,6 +76,26 @@ h5 {
 }
 
 .projectButtons:hover {
+  background-color: #eac944;
+  border: 3px solid black;
+}
+
+.footer {
+  background-color: #ffde59;
+  padding: 40px 50px;
+  border-radius: 10px;
+}
+
+.applybutton {
+  background-color: #fae079;
+  border-radius: 8px;
+  color: black;
+  font-size: 14px;
+  padding: 18px 65px;
+  border: 3px solid black;
+}
+
+.applybutton:hover {
   background-color: #eac944;
   border: 3px solid black;
 }
