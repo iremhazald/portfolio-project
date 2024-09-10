@@ -139,3 +139,61 @@ h5 {
 .card-footer {
   background-color: #ffde59;
 }
+
+@media (max-width: 576px) {
+  .illustrate {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .introduce {
+    text-align: center;
+  }
+
+  .hi {
+    margin-left: 2% !important;
+  }
+
+  h1 {
+    font-size: 55;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .col-sm-4 {
+    margin-bottom: 20px !important;
+  }
+
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+  .footerButton {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .applybutton {
+    margin-right: 38%;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px 50px;
+    margin: 23px !important;
+  }
+
+  .col-sm-8 h2 {
+    font-size: 33px;
+  }
+
+  .footerh5 {
+    font-size: 16px;
+  }
+}
