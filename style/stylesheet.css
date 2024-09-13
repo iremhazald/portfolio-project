@@ -13,6 +13,12 @@ body {
   background-color: var(--background-color);
 }
 
+.illustrateAbout {
+  width: 25% !important;
+  height: 40% !important;
+  border: none !important;
+}
+
 .illustrate {
   width: 25% !important;
   height: 40% !important;
@@ -86,6 +92,12 @@ h5 {
   border-radius: 10px;
 }
 
+.footerAbout {
+  background-color: #ffde59;
+  padding: 40px;
+  border-radius: 10px;
+}
+
 .applybutton {
   background-color: #fae079;
   border-radius: 8px;
@@ -96,7 +108,22 @@ h5 {
   margin-left: 115px;
 }
 
+.applybuttonAbout {
+  background-color: #fae079;
+  border-radius: 8px;
+  color: #212529;
+  font-size: 16px;
+  padding: 18px 65px;
+  border: 3px solid #212529;
+  margin-left: 115px;
+}
+
 .applybutton:hover {
+  background-color: #eac944;
+  border: 3px solid black;
+}
+
+.applybuttonAbout:hover {
   background-color: #eac944;
   border: 3px solid black;
 }
@@ -140,10 +167,18 @@ h5 {
   background-color: #ffde59;
 }
 
+.aboutH5 {
+  font-size: 14px !important;
+}
+.aboutParagraph {
+  font-size: 15px;
+}
+
 @media (max-width: 576px) {
   .illustrate {
     width: 100% !important;
     height: 100% !important;
+    border: none !important;
   }
 
   .introduce {
@@ -188,6 +223,13 @@ h5 {
     padding: 10px 50px;
     margin: 23px !important;
   }
+  .applybuttonAbout {
+    margin-right: 38%;
+    border-radius: 8px;
+    font-size: 19px;
+    padding: 10px 50px;
+    margin: 23px !important;
+  }
 
   .col-sm-8 h2 {
     font-size: 33px;
@@ -195,5 +237,33 @@ h5 {
 
   .footerh5 {
     font-size: 16px;
+  }
+
+  .aboutH5 {
+    font-size: 13px !important;
+  }
+
+  .aboutHeader {
+    font-size: 53px;
+    margin-top: -7%;
+  }
+
+  .illustrateAbout {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+  }
+  .aboutParagraph {
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: justify;
+    margin-bottom: -15%;
+  }
+  .footerAbout {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
