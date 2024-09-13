@@ -14,14 +14,8 @@ body {
 }
 
 .illustrateAbout {
-  width: 25% !important;
-  height: 40% !important;
-  border: none !important;
-}
-
-.illustrate {
-  width: 25% !important;
-  height: 40% !important;
+  width: 70% !important;
+  height: 98% !important;
   border: none !important;
 }
 
@@ -65,47 +59,10 @@ h5 {
   border: 2px solid black;
 }
 
-.col-sm-6 img {
-  width: 70% !important;
-  height: 95% !important;
-  border: 4px solid black;
-}
-
-.projectButtons {
-  background-color: #ffde59;
-  border-radius: 8px;
-  color: black !important;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 8px 65px;
-  border: 3px solid black;
-}
-
-.projectButtons:hover {
-  background-color: #eac944;
-  border: 3px solid black;
-}
-
-.footer {
-  background-color: #ffde59;
-  padding: 40px;
-  border-radius: 10px;
-}
-
 .footerAbout {
   background-color: #ffde59;
   padding: 40px;
   border-radius: 10px;
-}
-
-.applybutton {
-  background-color: #fae079;
-  border-radius: 8px;
-  color: #212529;
-  font-size: 16px;
-  padding: 18px 65px;
-  border: 3px solid #212529;
-  margin-left: 115px;
 }
 
 .applybuttonAbout {
@@ -118,49 +75,9 @@ h5 {
   margin-left: 115px;
 }
 
-.applybutton:hover {
-  background-color: #eac944;
-  border: 3px solid black;
-}
-
 .applybuttonAbout:hover {
   background-color: #eac944;
   border: 3px solid black;
-}
-
-.card-title {
-  font-family: var(--heading-font-family);
-  text-align: center;
-  font-size: 28px;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 50%;
-  border-bottom: 3px solid #ffde59;
-  padding: 15px;
-}
-
-.card-text {
-  font-size: 14px;
-}
-
-.btn-launch {
-  background-color: #ffde59;
-  border-radius: 8px;
-  color: #212529;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 8px 65px;
-}
-
-.btn-launch:hover {
-  background-color: #eac944;
-  border-radius: 8px;
-  color: black;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 8px 65px;
 }
 
 .card-footer {
@@ -174,10 +91,10 @@ h5 {
   font-size: 15px;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .illustrate {
-    width: 100% !important;
-    height: 100% !important;
+    width: auto;
+    height: auto;
     border: none !important;
   }
 
@@ -185,12 +102,18 @@ h5 {
     text-align: center;
   }
 
+  .mainpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hi {
     margin-left: 2% !important;
   }
 
   h1 {
-    font-size: 55;
+    font-size: 55px;
   }
   h5 {
     font-size: 12px;
@@ -216,13 +139,6 @@ h5 {
     align-items: center !important;
   }
 
-  .applybutton {
-    margin-right: 38%;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 10px 50px;
-    margin: 23px !important;
-  }
   .applybuttonAbout {
     margin-right: 38%;
     border-radius: 8px;
@@ -265,5 +181,54 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .illustrateAbout {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    margin-left: -5% !important;
+  }
+
+  .introduce {
+    text-align: center;
+    margin-top: -7% !important;
+  }
+
+  .aboutHeader {
+    font-size: 27px !important;
+    margin-left: -1%;
+  }
+
+  .aboutH5 {
+    font-size: 9px !important;
+  }
+  .aboutParagraph {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .applybuttonAbout {
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 18px 30px;
+    margin-left: 50px;
+  }
+  .footerh5 {
+    font-size: 11px !important;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .illustrateAbout {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    margin-left: -5% !important;
+  }
+
+  .aboutHeader {
+    font-size: 65px !important;
+    margin-left: -1%;
   }
 }
