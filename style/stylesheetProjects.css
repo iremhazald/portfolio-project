@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --background-color: #f5f5f5;
+  --heading-font-family: "Bebas Neue", sans-serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+}
+
+h2 {
+  font-family: var(--heading-font-family);
+}
+
+h3 {
+  margin-left: 180px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #ffde59;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.applybutton {
+  background-color: #fae079;
+  border-radius: 8px;
+  color: #212529;
+  font-size: 16px;
+  padding: 18px 65px;
+  border: 3px solid #212529;
+  margin-left: 115px;
+}
+
+.applybutton:hover {
+  background-color: #eac944;
+  border: 3px solid black;
+}
+
+.btn-launch {
+  background-color: #ffde59;
+  border-radius: 8px;
+  color: #212529;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 65px;
+}
+
+.btn-launch:hover {
+  background-color: #eac944;
+  border-radius: 8px;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 65px;
+}
+
+.pictures {
+  width: 85% !important;
+  height: 95% !important;
+  border-radius: 25px !important;
+  padding: 15px;
+  background-color: #ffde59;
+}
+
+@media only screen and (max-width: 576px) {
+  .projectsContainer {
+    margin-top: -10% !important;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 0px 15px;
+    text-align: center;
+  }
+
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-launch {
+    margin-top: -20% !important;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .col-sm-4 {
+    margin-bottom: 20px !important;
+  }
+
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+  .footerButton {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .applybutton {
+    margin-right: 38%;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin: 23px !important;
+  }
+
+  .col-sm-8 h2 {
+    font-size: 33px;
+  }
+
+  .footerh5 {
+    font-size: 16px;
+  }
+
+  .aboutH5 {
+    font-size: 13px !important;
+  }
+
+  .aboutHeader {
+    font-size: 53px;
+    margin-top: -7%;
+  }
+
+  .illustrateAbout {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+  }
+  .aboutParagraph {
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: justify;
+    margin-bottom: -15%;
+  }
+  .footerAbout {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .illustrate {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    margin-left: 7% !important;
+  }
+  .mainpart {
+    background-color: #ffde59;
+    padding: 120px 0px !important;
+    margin-top: 30px;
+  }
+  .introduce {
+    text-align: center;
+    margin-left: 2% !important;
+  }
+
+  .hi {
+    font-size: 18px !important;
+    margin-left: -1%;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+  h5 {
+    font-size: 10px;
+  }
+
+  .btn-branding {
+    border-radius: 8px;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 10px;
+    border: 3px solid black;
+  }
+
+  .cells img {
+    height: auto;
+    width: auto;
+  }
+
+  .btn-launch {
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  .btn-launch:hover {
+    background-color: #eac944;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  .buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-text {
+    font-size: 11px !important;
+  }
+  .card-body h5 {
+    font-size: 18px !important;
+  }
+  .applybutton {
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 18px 30px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .illustrate {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    margin-left: 5% !important;
+  }
+
+  .mainpart {
+    background-color: #ffde59;
+    padding: 100px 0px !important;
+    margin-top: 30px;
+  }
+  .introduce {
+    text-align: center;
+    margin-left: 2% !important;
+  }
+  .hi {
+    font-size: 25px !important;
+    margin-left: -1%;
+  }
+
+  h1 {
+    font-size: 60px !important;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+}
