@@ -61,6 +61,14 @@ i {
   border-radius: 10px;
 }
 
+.footerHeader {
+  font-family: var(--heading-font-family) !important;
+  font-size: 30px !important;
+}
+.footerh5 {
+  font-family: var(--default-font-family);
+  font-size: 16px;
+}
 .applybutton {
   background-color: #fae079;
   border-radius: 8px;
@@ -80,7 +88,9 @@ i {
   .headings {
     font-size: 17px !important;
     display: flex;
-    margin-left: -25%;
+    justify-content: center;
+    margin-left: 10% !important;
+    margin-top: 2% !important;
   }
 
   .sub {
@@ -89,6 +99,8 @@ i {
     display: flex;
     justify-content: center;
     margin-left: 3%;
+    margin-top: -5% !important;
+    margin-bottom: 10% !important;
   }
 
   .sub1 {
@@ -97,17 +109,18 @@ i {
     display: flex;
     justify-content: center;
     margin-left: 1.5%;
+    margin-top: -5% !important;
+    margin-bottom: 10% !important;
   }
 
   .icon {
     display: flex;
     justify-content: center;
-    margin-left: -25%;
+    margin-left: -43%;
   }
 
   i {
     font-size: 30px;
-    margin-right: -5%;
   }
 
   .footer {
@@ -158,6 +171,4 @@ i {
   .footerh5 {
     font-size: 11px !important;
   }
-}
-@media only screen and (min-width: 993px) and (max-width: 1199px) {
 }
