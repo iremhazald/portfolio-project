@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let windSpeed = prompt("What is the wind speed?").trim();
+  let unit = prompt("In what unit? (metric/imperial)").trim().toLowerCase();
+
+  function isWindy(speed, unit) {
+    if (unit === "metric" && speed > 5) {
+      alert("It is windy.");
+    } else if (unit === "imperial" && speed > 5) {
+      alert("It is not windy.");
+    } else {
+      alert("It is not windy.");
+    }
+  }
+
+  isWindy(windSpeed, unit);
+</script>

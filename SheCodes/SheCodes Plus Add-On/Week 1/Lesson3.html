@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes</title>
+    <meta charset="UTF-8" />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="SheCOdes" class="logo" />
+    <h1>HTML Select Element</h1>
+
+    <h3>Challenge 1</h3>
+    <p>
+      Create a select element inside a form with 5 fruits as an option and label
+      "What is your favorite fruit?"
+    </p>
+
+    <label for="fruits">What is your favorite fruit?</label>
+    <br />
+    <select id="fruits">
+      <option value="banana">banana</option>
+      <option value="apple">apple</option>
+      <option value="strawberry">strawberry</option>
+      <option value="cherry">cherry</option>
+      <option value="blueberry">blueberry</option>
+    </select>
+
+    <h3>Challenge 2</h3>
+    <p>
+      Create a select element with the 3 primary colors, when the user selects
+      red, alert the emoji ❤️, when the user selects blue, alert the emoji 💙
+      and the the user selects yellow, alert 💛. Include an empty option which
+      is selected by default.
+    </p>
+
+    <select id="colors">
+      <option value="">Select a color</option>
+      <!-- Select a color ı seçmek istemediğimizden value süne boş bırakıyoruz. Sonrasında ifli function açıp durum düzenliyoruz. -->
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="yellow">yellow</option>
+    </select>
+  </body>
+  <script>
+    let selectedColor = document.querySelector("#colors");
+
+    function showEmoji(event) {
+      if (event.target.value.length > 0) {
+        if (event.target.value == "red") {
+          alert("❤️");
+        } else if (event.target.value == "blue") {
+          alert("💙");
+        } else if (event.target.value == "yellow") {
+          alert("💛");
+        }
+      }
+    }
+
+    selectedColor.addEventListener("change", showEmoji);
+  </script>
+</html>

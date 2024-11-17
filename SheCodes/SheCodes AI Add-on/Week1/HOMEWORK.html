@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes</title>
+    <meta charset="UTF-8" />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <button>Tell me joke</button>
+    <div id="joke"><div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
+<script>
+function displayJoke(response) {
+  console.log(response.data.answer);
+
+  new Typewriter("#joke", {
+    strings: response.data.answer,
+    autoStart: true,
+    cursor: "",
+    delay: 50,
+  });
+}
+
+function fetchJoke(event) {
+  event.preventDefault();
+  let apiKey = "1e4573e080b57c89fadd0873aeof420t";
+  let context = "be polite and provide no offensive jokes";
+  let prompt =
+    "You are an opinionated AI Assistant who has a lot knowledge about jokes all around the world. Please, provide me a joke. I'd like to you to be precise and provide one definitely.";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let jokeText = document.querySelector("#joke");
+
+  jokeText.innerHTML = "Generating a joke for you.. please wait";
+  axios.get(apiUrl).then(displayJoke);
+}
+let buttonJoke = document.querySelector("button");
+buttonJoke.addEventListener("click", fetchJoke);
+
+</script>

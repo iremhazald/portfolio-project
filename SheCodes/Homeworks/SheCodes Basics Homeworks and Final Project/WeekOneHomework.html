@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      .header1 p {
+        text-align: center;
+        font-size: x-large;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 6px;
+      }
+      .current {
+        text-align: center;
+        font-size: x-large;
+        display: block;
+        margin: 0 auto;
+
+      }
+
+      .current p{
+        font-size: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 5px;
+        
+      }
+      h1 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+
+     .tomorrow{
+        text-align: center;
+        font-size: normal;
+        display: block;
+        margin: 0 auto ;
+        width: 30%;
+        height: 100%;
+
+      }
+
+      .tomorrow:hover{
+         background-color: #FFFAEF;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .tomorrowDegree{
+        margin-top: -20px;
+        font-family:'Courier New', Courier, monospace;
+      }
+
+
+      .saturday{
+        text-align: center;
+        font-size: normal;
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        height: 100%;
+
+      }
+
+       .saturday:hover{
+         background-color: #FFFAEF;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+
+      .saturdayDegree{
+        margin-top: -20px;
+        font-family:'Courier New', Courier, monospace;
+      }
+
+      .sunday{
+        text-align: center;
+        font-size: normal;
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        height: 100%;
+
+      }
+
+       .sunday:hover{
+         background-color: #FFFAEF;
+       border-radius: 10px;
+        cursor: pointer;
+      }
+
+
+      .sundayDegree{
+        margin-top: -20px;
+        font-family:'Courier New', Courier, monospace;
+      }
+
+
+      button {
+        display: block;
+        margin: 0 auto 0 auto;
+        padding: 20px 35px 20px 35px;
+        color: #ffffff;
+        background-color: #1A58D1;
+        font-weight: normal;
+        font-size: medium;
+        border:2px solid #1A58D1;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+      .cityButton{
+        margin-top:10px;
+      }
+      .button:hover{
+       background-color: #811930;
+      }
+
+      .matt{
+        padding-top:25px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header1"><p>🌤️</p></div>
+
+    <div class="current">
+      <h2
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #235ac3; margin-top: -7px; margin-bottom:0;
+        "
+      >
+        Currently 21° in Tokyo
+      </h2>
+      <p style="display: inline-block; padding-top: -50px; ">
+        13°/  
+        <p style="display: inline-block; font-weight: bold; padding-left: 6px">23°</p>
+      </p>
+    </div>
+
+    <div class="tomorrow">
+      <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: large;">🌧️ Tomorrow</p>
+     <p class="tomorrowDegree" style="display: inline-block; padding-top: -50px; ">
+        10°/  
+        <p class="tomorrowDegree" style="display: inline-block; font-weight: bold; padding-left: 6px">22°</p>
+      </p>
+    </div>
+
+    <div class="saturday">
+      <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: large;">🌥️ Saturday</p>
+     <p class="saturdayDegree" style="display: inline-block; padding-top: -50px; ">
+        15°/  
+        <p class="saturdayDegree" style="display: inline-block; font-weight: bold; padding-left: 6px">17°</p>
+      </p>
+    </div>
+
+   <div class="sunday">
+      <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: large;">☀️ Sunday</p>
+     <p class="sundayDegree" style="display: inline-block; padding-top: -50px; ">
+        25°/  
+        <p class="sundayDegree" style="display: inline-block; font-weight: bold; padding-left: 6px">28°</p>
+      </p>
+    </div>
+
+   <div class="cityButton"> <button>Change city</button></div>
+    <p class="matt">Coded by Matt Blanc</p>
+  </body>
+</html>

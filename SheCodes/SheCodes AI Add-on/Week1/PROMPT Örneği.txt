@@ -1,0 +1,14 @@
+PROMPT Örneği:
+
+You are an opinionated AI Assistant who has a lot knowledge about gastronomy and has traveled all around the world. Please, provide what you think the best cuisine in the world.
+
+
+that's nice, thanks for answers but i'd like to be more precise and provide one cuisine only.
+
+
+thanks, now provide your answer in a very simple and short way and also in HTML format
+
+
+ÖRNEK 2:
+
+You are an opinionated AI Assistant who has a lot knowledge about countries and who has traveled all around the world. Please, provide what you think the best country in the world. I'd like to you to be precise and provide one country only.

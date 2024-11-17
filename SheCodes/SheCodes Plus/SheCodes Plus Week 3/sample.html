@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let weather = {
+    temp: 19,
+    humidity: 50,
+    windspeed: 3,
+  };
+
+  let forecast = [
+    {
+      day: "Monday",
+      temp: 19,
+    },
+    {
+      day: "Sunday",
+      temp: 21,
+    },
+    {
+      day: "Wednesday",
+      temp: 23,
+    },
+    {
+      day: "Thurday",
+      temp: 20,
+    },
+    {
+      day: "Friday",
+      temp: 18,
+    },
+    {
+      day: "Saturday",
+      temp: 17,
+    },
+    {
+      day: "Sunday",
+      temp: 20,
+    },
+  ];
+
+  console.log(weather);
+  console.log(weather.temp);
+  console.log(weather.humidity);
+  console.log(weather.windspeed);
+
+  console.log(forecast);
+
+  function DailyTempature(degree) {
+    console.log(
+      `Tempature for the ${degree.day} will be ${degree.temp} degrees`
+    );
+  }
+  forecast.forEach(DailyTempature);
+</script>

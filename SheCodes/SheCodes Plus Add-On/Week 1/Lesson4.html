@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS TIMING EVENTS</title>
+  </head>
+  <body>
+    <p>hello!</p>
+    <br />
+    <div id="date"></div>
+  </body>
+</html>
+<script>
+  function sayHello() {
+    alert("Hi!");
+  }
+
+  setTimeout(sayHello, 5000); //SetTimeOut fonksiyonu delay etmeye yarıyor. Burada mesela 5 saniye sonra çalıştır dedik.
+
+  setTimeout(() => {
+    let hello = document.querySelector("p");
+    hello.innerHTML = "bonjour!";
+  }, 3000);
+
+  function displayDate() {
+    let currentDate = document.querySelector("#date");
+    currentDate.innerHTML = new Date();
+  }
+
+  setInterval(displayDate, 1000); //SetInterval fonksiyonu x saniyede bir yenile demek. Burada mesela 1 saniyede bir fonskiyon yenileniyor.
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body></body>
+</html>
+<script>
+  function showComments(param) {
+    param.data.forEach((anotherParam) => {
+      console.log(anotherParam.email);
+    });
+
+    console.log(param.data);
+  }
+  let apiUrl = "https://jsonplaceholder.typicode.com/comments/";
+  axios.get(apiUrl).then(showComments);
+</script>

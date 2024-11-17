@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <style>
+      h1 {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
+<script>
+  new Typewriter("h1", {
+    strings: "Hello, Welcome to SheCodes!", //köşeli parantezleri kaldırınca yazılan yazının silinmesini önledik
+    autoStart: true,
+    cursor: "", //imleci sildik
+    delay: 100, //hızı ayarladık
+  });
+</script>

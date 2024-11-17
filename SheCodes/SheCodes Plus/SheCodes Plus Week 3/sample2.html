@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let paris = {
+    name: "Paris",
+    country: "France",
+    language: "French",
+    temperature: 18,
+    capitalCity: true,
+  };
+
+  let istanbul = {
+    name: "İstanbul",
+    country: "Turkey",
+    language: "Turkish",
+    temperature: 21,
+    capitalCity: false,
+  };
+
+  console.log(paris.temperature);
+  console.log(istanbul.temperature);
+
+  function australia(cities) {
+    console.log(cities);
+  }
+
+  let australianCities = ["Adalaide", "Sydney", "Melboune"];
+  australianCities.forEach(australia);
+
+  let someCities = [
+    {
+      name: "New York",
+      country: "USA",
+      language: "English",
+      temperature: 19,
+      capitalCity: false,
+    },
+    {
+      name: "Tokyo",
+      country: "Japan",
+      language: "Japanese",
+      temperature: 22,
+      capitalCity: true,
+    },
+    {
+      name: "Kanberra",
+      country: "Australia",
+      language: "English",
+      temperature: 15,
+      capitalCity: true,
+    },
+  ];
+  function someOfCities(namesDegrees) {
+    console.log(namesDegrees.name);
+    console.log(namesDegrees.temperature);
+  }
+  someCities.forEach(someOfCities);
+</script>

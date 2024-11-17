@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .darkButton {
+        color: white;
+        background-color: black;
+        padding: 13px 16px 13px 16px;
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      .lightButton {
+        color: black;
+        background-color: white;
+        padding: 13px 16px 13px 16px;
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .newBackground {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="darkButton">DARK THEME</button>
+    <script>
+      function makeItDark() {
+        let lightButton = document.querySelector(".darkButton");
+        let newBackground = document.querySelector("body");
+        newBackground.classList.add("newBackground");
+        lightButton.classList.add("lightButton");
+      }
+
+      let button = document.querySelector(".darkButton");
+      button.addEventListener("click", makeItDark);
+    </script>
+  </body>
+</html>

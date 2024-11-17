@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
+    <select id="cities">
+      <option value="">Select a city</option>
+      <!-- Select a color ı seçmek istemediğimizden value süne boş bırakıyoruz. Sonrasında ifli function açıp durum düzenliyoruz. -->
+      <option value="paris" id="paris">Paris 🇫🇷</option>
+      <option value="sydney" id="sydney">Sydney 🇦🇺</option>
+      <option value="tokyo" id="tokyo">tokyo 🇯🇵</option>
+    </select>
+  </body>
+  <script>
+    let parisTime = moment()
+      .tz("Europe/Paris")
+      .format("dddd, MMMM d, YYYY H:m a");
+    let sydneyTime = moment()
+      .tz("Australia/Sydney")
+      .format("dddd, MMMM d, YYYY H:m a");
+    let tokyoTime = moment()
+      .tz("Asia/Tokyo")
+      .format("dddd d, MMMM, YYYY H:m a");
+
+    let cities = document.querySelector("#cities");
+
+    function showCityTime(event) {
+      if (event.target.value.length > 0) {
+        if (event.target.value == "paris") {
+          alert(`It is ${parisTime} in Europe/Paris`);
+        } else if (event.target.value == "sydney") {
+          alert(`It is ${sydneyTime} in Australia/Sydney`);
+        } else if (event.target.value == "tokyo") {
+          alert(`It is ${tokyoTime} in Asia/Tokyo`);
+        }
+      }
+    }
+
+    cities.addEventListener("change", showCityTime);
+  </script>
+</html>
